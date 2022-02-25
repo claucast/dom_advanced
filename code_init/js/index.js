@@ -1,5 +1,8 @@
 // ITERATION 1
 
+let totalisimo = document.getElementById("totalisimo")
+//console.log(totalisimo.textContent)
+
 function updateSubtotal(product) {
 
   console.log('Calculating subtotal, yey!');
@@ -50,6 +53,8 @@ function updateSubtotal(product) {
     console.log(totalArr);
 
     grandTotal = Number(totalArr).toFixed(2);
+
+    totalisimo.textContent = grandTotal
 
     return grandTotal;
     }
